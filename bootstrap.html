@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="https://img.icons8.com/?size=64&amp;id=iTkwwwqdX4t6&amp;format=png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    
+    body {
+      background: linear-gradient(to bottom right, #0d1117, #1f2937);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .bulls {
+      color: red;
+    }
+
+    .lakers {
+      color: purple;
+    }
+
+    .LA {
+      color: gold;
+    }
+
+  </style>
 </head>
 <body>
-    <div class="container p-5 my-5 bg-secondary text-info">
-        <h1>Il Mio Primo Bootstrap</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+
+<div class="container-fluid p-5 bg-warning text-black text-center">
+  <h1>I grandi dell' NBA</h1>
+  <p>Sito a scopo didattico di Chiappa Matteo. Esercitazione con bootstrap</p> 
+</div>
+  
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 class="bulls"><b>Micheal Jordan</b></h3>
+      <p class="bulls">Chigago Bulls</p>
+      <p>Soprannominato "Air Jordan" e "His Airness" per le sue qualità atletiche e tecniche, fu eletto nel 1999 "il più grande atleta nordamericano del XX secolo" dal canale televisivo sportivo ESPN. Negli anni ha acquisito molta fama sul campo che lo ha reso un'icona dello sport, al punto da spingere la Nike a dedicargli una linea di scarpe da pallacanestro chiamata Air Jordan, introdotta nel 1984.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 class="lakers"><b>LeBron James</b></h3>
+      <p class="lakers">Los Angeles Lakers</p>
+      <p>LeBron Raymone James Sr. (Akron, 30 dicembre 1984) è un cestista statunitense, professionista nella NBA con i Los Angeles Lakers. Conosciuto anche con l'acronimo LBJ e con vari soprannomi tra cui The kid from Akron (Il bambino da Akron), King James (Re James) e The Chosen One (Il prescelto), è considerato uno dei migliori giocatori di basket di tutti i tempi.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 class="LA"><b>Kobe Bryant</b></h3>        
+      <p class="LA">Los Angeles Lakers</p>
+      <p>Ha giocato prevalentemente nel ruolo di guardia tiratrice ed è considerato tra i migliori giocatori nella storia dell'NBA. Figlio di Joe Bryant e nipote da parte di madre di Chubby Cox, entrambi ex cestisti, Bryant è cresciuto cestisticamente in Italia, dove ha imparato i fondamentali europei, e ha disputato tutta la sua carriera professionistica nei Los Angeles Lakers, conquistando 5 titoli; è stato inoltre il primo giocatore NBA a militare nella stessa squadra per venti stagioni. Con la Nazionale statunitense ha partecipato ai FIBA Americas Championship 2007 e ai Giochi olimpici di Pechino 2008 e di Londra 2012, vincendo la medaglia d'oro in tutte e tre le manifestazioni.</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
