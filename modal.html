@@ -7,14 +7,53 @@
     </script>
     <style type="text/css" id="operaUserStyle"></style>
     <style type="text/css"></style>
+    <style>
+      body {
+      background: linear-gradient(to bottom right, #0d1117, #1f2937);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .modal-title {
+      color: black;
+    }
+
+    .modal-body {
+      color: black;
+    }
+
+    h3 {
+      font-size: 90px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .lista-box {
+      background-color: #2d3748;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 10);
+      margin-bottom: 2rem;
+    }
+    
+    .lista-box-centrata {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    </style>
 </head>
 <body>
     <div class="container mt-3">
         <h3>Modale</h3>
+        <div class="lista-box lista-box-centrata">
         <p>Clicca per ricevere un codice sulla tua email</p>
         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
-            Invia codice
-          </button>
+          Invia codice
+        </button>
+        </div>
     </div>
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
@@ -24,10 +63,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                Controlla la tua email
+                Controlla la tua email per il codice
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Conferma</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Conferma</button>
             </div>
           </div>
         </div>
