@@ -3,15 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabella</title>
+    <link rel="icon" type="image/svg+xml" href="https://img.icons8.com/?size=64&amp;id=iTkwwwqdX4t6&amp;format=png">
     <style>
-        .odd{background-color: gray;}
-        td{padding: 5px;}
-        td:hover{background-color: red;}
+        
+      body {
+        background: linear-gradient(to bottom right, #0d1117, #1f2937);
+        color: white;
+        min-height: 100vh;
+        font-family: 'Segoe UI', sans-serif;
+      }
+
+      .odd{background-color: gray;}
+      td{padding: 5px;}
+      td:hover{background-color: gold;}
+
+      table {
+        margin-top: 200px;
+      }
+
+      td:hover {
+        cursor: pointer;
+        color: black;
+      }
+
+    .lista-box {
+      background-color: #2d3748;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 10);
+      margin-bottom: 2rem;
+    }
+    
+    .lista-box-centrata {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
     </style>
 </head>
 <body>
-    <table cellspacing="5em" border="2em">
+  <h1>TABELLA</h1>
+    <table cellspacing="5em" border="2em" align="center" class="lista-box lista-box-centrata">
         <tr class="odd">
             <td>Lorem.</td>
             <td>Lorem.</td>
