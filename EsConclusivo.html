@@ -30,13 +30,33 @@
 
     span.blu {
         color: #003399;
+        background-color: #EAE6CA;
+        font-weight: 500;
+    }
+
+    .lista-box {
+      background-color: #2d3748;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 10);
+      margin-bottom: 2rem;
+    }
+    
+    .lista-box-centrata {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    p {
+      font-size: 20px;
     }
 
     </style>
 </head>
 <body>
     <image src="https://hd2.tudocdn.net/1203241?w=1920" alt="immagine non caricata"><br>
-    <table align="center" cellspacing="10" cellpadding="5" widht="20%" border="1">
+    <br>
+    <table class="lista-box lista-box-centrata" align="center" cellspacing="10" cellpadding="5" widht="20%" border="1">
       <tr>
         <td colspan="2" bgcolor="#F70D1A">Ferrari SF90XX</td>
       </tr>
@@ -49,23 +69,25 @@
         <td>Benzina plug-in</td>
       </tr>
     </table>
-    <p>Optional:</p> <ul type="square">
+    <p>Optional:</p> <ul type="square" class="lista-box lista-box-centrata">
       <li> <span class="rosso">Rosso ferrari</span></li>
       <li> <span class="giallo">Giallo modena</span></li>
       <li> <span class="bianco">Bianco perla</span></li>
       <li> <span class="blu">Blu elettrico</span></li>
     </ul>
-    <p>Questa hypercar offre un esperienza incredibile combinando velocità, tecnologia e bellezza.<br>
+    <p class="lista-box lista-box-centrata">Questa hypercar offre un esperienza incredibile combinando velocità, tecnologia e bellezza.<br>
       Tra le Ferrari più potenti di sempre, la SF90XX ha 1030cv grazie al suo V8 biturbo da 4.0 litri insieme a 3 motori elettrici che possono anche spiengere l'auto da soli.<br>
       Tutto ciò permette a questo modello di fare da 0 a 100kmh in 2,3 secondi e da 0 a 200kmh in 6,5 secondi</p>
-    <form>
-      <p>Concessionario Rossocorsa</p><br>
-      <p><input type="checkbox" name="acconsento" id="acconsento">Acconsento al trattamento dei dati</p><br>
-      <select>
+    <form class="lista-box lista-box-centrata">
+      <p><font color="#F70D1A">Concessionario Rossocorsa</font></p>
+      <p><input type="checkbox" name="acconsento" id="acconsento">Acconsento al trattamento dei dati</p>  
+      <p>Seleziona il modello desiderato <select>
         <option value="Spi">Spider</option>
         <option value="Per">Performante</option>
         <option value="Str">Stradale</option>
-      </select><br>
+      </select>
+      </p>
+      <br>
       <input type="submit">
     </form>   
 </body>
