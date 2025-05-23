@@ -12,23 +12,40 @@
         min-height: 100vh;
         margin-top: 100px;
     }
+
+    .lista-box {
+      background-color: #2d3748;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 10);
+      margin-bottom: 2rem;
+      margin-left: 43%;
+    }
+
+    .lista-box-centrata {
+      max-width: 200px;
+      width: auto;
+    }
+
     </style>
 </head>
 <body>
     <center>
         <img src="https://img.stcrm.it/images/44204895/HOR_WIDE/800x/250516-r07-emr-dp-av3-0537-1-9b1d0436-9c50-477f-b629-b9662eed4f80.jpeg" alt="immagine non disponibile"></img>
     </center>
-      <hr style="width: 1000px; height: 4px; background-color: #ffffff; border: none; margin: 2rem auto;">
-     <p><i>Pedice ed apice:</i></p>
-    x <sub>1</sub>
-     y <sup>2</sup>
-    <ul type="square">
+    <hr style="width: 1000px; height: 4px; background-color: #ffffff; border: none; margin: 2rem auto;">
+    <p class="lista-box lista-box-centrata">
+        <i>Pedice ed apice:</i>
+        x <sub>1</sub>
+        y <sup>2</sup>
+    </p>
+    <ul type="square" class="lista-box lista-box-centrata">
         <li>Lista non ordinata</li>
         <li>con tre</li>
         <li>elementi </li>
     </ul>
-    <ol typer="A" start="4">
-        <li>Lista ordinata</li>
+    <ol typer="A" start="4" class="lista-box lista-box-centrata">
+        <li>Lista ordinata che parte dal 4</li>
         <li>con due elementi</li>
     </ol>
 </html>
