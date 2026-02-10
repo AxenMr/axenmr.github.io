@@ -1,0 +1,66 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.pulsante {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: #28527a;
+  border: 2px solid #28527a;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.pulsante:hover {
+  background: #f4d160;
+  border: #f4d160;
+  color: #000;
+  transform: scale(1.08);
+}
+
+.tavolo {
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.box {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: #28527a;
+  border: 2px solid #28527a;
+  border-radius: 8px;
+}
+
+.tavolo:hover {
+  transform: scale(1.1);
+}
+
+.libero { background-color: #28a745; }
+.occupato { background-color: #dc3545; }
+.conto { background-color: #ffc107; color: #000;}
