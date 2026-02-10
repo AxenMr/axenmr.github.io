@@ -2,28 +2,43 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Area Manager</title>
+  <title>Manager</title>
   <link rel="stylesheet" href="Decorazioni.css">
 </head>
 <body>
-  <h1>Area Manager</h1>
-
-  <h2>Statistiche giornaliere</h2>
+  <h1>Statistiche Giornata</h1>
 
   <p class="box">Ordini totali: <span id="ordini"></span></p>
-
   <p class="box">Incasso totale: €<span id="incasso"></span></p>
+  <p><button class="pulsante" onclick="resetGiornata()">Ritara soldi</button>
+</p>
+
+  <p><a href="Menu.html" class="pulsante">Menù</a></p>
 
   <script>
-    document.getElementById("ordini").innerText =
-    localStorage.getItem("ordini");
-    document.getElementById("incasso").innerText =
-    localStorage.getItem("incasso");
-  </script>
-  
-  <p><a href="Menu.html" class="pulsante">Menù</a></p>
-  
-  <a href="Ristorante.html" class="pulsante">Torna alla home</a>
+    function aggiornaStatistiche() {
+        let ordini = localStorage.getItem("ordini");
+        let incasso = localStorage.getItem("incasso");
+        if (ordini === null) ordini = 0;
+        if (incasso === null) incasso = 0;
+        document.getElementById("ordini").innerText = ordini;
+        document.getElementById("incasso").innerText = incasso;
+    }
 
+    function resetGiornata() {
+        if (confirm("Sei sicuro di voler ritirare gli incassi di oggi?")) {
+            localStorage.setItem("ordini", 0);
+            localStorage.setItem("incasso", 0);
+            localStorage.setItem("bar", "");
+            localStorage.setItem("cucina", "");
+            aggiornaStatistiche();
+        }
+    }
+    aggiornaStatistiche();
+</script>
+
+  <br>
+
+  <a href="Ristorante.html" class="pulsante">Home</a>
 </body>
 </html>
