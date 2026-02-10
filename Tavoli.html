@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista Tavoli</title>
+  <link rel="stylesheet" href="Decorazioni.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .contenitore {
+      text-align: center;
+    }
+
+    .griglia {
+      display: grid;
+      grid-template-columns: repeat(5, 120px);
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .tavolo {
+      padding: 15px;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="contenitore">
+    <h1>Stato Tavoli</h1>
+    <div class="griglia" id="tavoli"></div>
+    <br>
+    <a href="Cameriere.html" class="pulsante">Torna al cameriere</a>
+  </div>
+  <script>
+    const tavoli = [
+      { numero: 1, stato: "libero" },
+      { numero: 2, stato: "occupato" },
+      { numero: 3, stato: "libero" },
+      { numero: 4, stato: "conto" },
+      { numero: 5, stato: "libero" },
+
+      { numero: 6, stato: "occupato" },
+      { numero: 7, stato: "libero" },
+      { numero: 8, stato: "conto" },
+      { numero: 9, stato: "occupato" },
+      { numero: 10, stato: "libero" },
+
+      { numero: 11, stato: "libero" },
+      { numero: 12, stato: "occupato" },
+      { numero: 13, stato: "libero" },
+      { numero: 14, stato: "conto" },
+      { numero: 15, stato: "libero" }
+    ];
+
+    const container = document.getElementById("tavoli");
+
+    tavoli.forEach(t => {
+      let div = document.createElement("div");
+      div.className = "tavolo " + t.stato;
+      div.innerHTML = "Tavolo " + t.numero + "<br>" + t.stato;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
