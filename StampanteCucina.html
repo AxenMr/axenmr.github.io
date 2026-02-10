@@ -2,19 +2,35 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Stampante Cucina</title>
+  <title>Stampante cucina</title>
   <link rel="stylesheet" href="Decorazioni.css">
 </head>
 <body>
-  <h1>Stampante Cucina</h1>
+  <div class="container">
+    <h1>Stampante cucina</h1>
 
-  <p id="output" class="box"></p>
+    <p id="output" class="box"></p>
+
+    <br>
+
+    <button class="pulsante" onclick="pulisciBar()">Stampa</button>
+
+    <br><br>
+    <a href="Ristorante.html" class="pulsante">Home</a>
+  </div>
 
   <script>
-    document.getElementById("output").innerText =
-      localStorage.getItem("cucina") || "Nessun ordine";
-  </script>
+    function mostraBar() {
+      document.getElementById("output").innerText =
+        localStorage.getItem("cucina") || "Nessun ordine";
+    }
 
-  <a href="Ristorante.html" class="pulsante">Indietro</a>
+    function pulisciBar() {
+      localStorage.setItem("cucina", "");
+      mostraBar();
+    }
+
+    mostraBar();
+  </script>
 </body>
 </html>
