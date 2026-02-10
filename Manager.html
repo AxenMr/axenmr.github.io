@@ -2,15 +2,28 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Manager</title>
+  <title>Area Manager</title>
   <link rel="stylesheet" href="Decorazioni.css">
 </head>
 <body>
   <h1>Area Manager</h1>
-  <p>Statistiche giornaliere</p>
-  <li class="pulsante">Ordini totali: 42</li>
-  <li class="pulsante">Incasso: €520</li>
+
+  <h2>Statistiche giornaliere</h2>
+
+  <p class="box">Ordini totali: <span id="ordini"></span></p>
+
+  <p class="box">Incasso totale: €<span id="incasso"></span></p>
+
+  <script>
+    document.getElementById("ordini").innerText =
+    localStorage.getItem("ordini");
+    document.getElementById("incasso").innerText =
+    localStorage.getItem("incasso");
+  </script>
+  
   <p><a href="Menu.html" class="pulsante">Menù</a></p>
+  
   <a href="Ristorante.html" class="pulsante">Torna alla home</a>
+
 </body>
 </html>
