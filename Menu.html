@@ -30,20 +30,20 @@
 
     <br>
 
-    <a href="Cameriere.html" class="pulsante">Torna al cameriere</a>
+    <a href="Ristorante.html" class="pulsante">Torna alla home</a>
     
     <script>
       function ordina(codice, destinazione, prezzo) {
         let ordini = parseInt(localStorage.getItem("ordini"));
         let incasso = parseInt(localStorage.getItem("incasso"));
-        localStorage.setItem("Ordini", ordini + 1);
-        localStorage.setItem("Incasso", incasso + prezzo);
+        localStorage.setItem("ordini", ordini + 1);
+        localStorage.setItem("incasso", incasso + prezzo);
         let messaggio = codice + " ";
         let vecchio = localStorage.getItem(destinazione);
         localStorage.setItem(destinazione, vecchio + messaggio);
         alert("Ordine inviato a " + destinazione);
       }
-      
+
   </script>
 </body>
 </html>
