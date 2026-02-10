@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Stampante Bar</title>
+  <link rel="stylesheet" href="Decorazioni.css">
+</head>
+<body>
+
+  <h1>Stampante Bar</h1>
+
+  <p id="output" class="box"></p>
+
+  <script>
+    document.getElementById("output").innerText =
+      localStorage.getItem("bar") || "Nessun ordine";
+  </script>
+
+  <a href="Ristorante.html" class="pulsante">Indietro</a>
+</body>
+</html>
