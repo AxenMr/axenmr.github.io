@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante</title>
+    <link rel="stylesheet" href="Decorazioni.css">
+    <script>
+        if (!localStorage.getItem("ordini")) {
+            localStorage.setItem("ordini", "0");
+            localStorage.setItem("incasso", "0");
+            localStorage.setItem("bar", "");
+            localStorage.setItem("cucina", "");
+        }
+    </script>
+</head>
+<body>
+    <h1>Benvenuto nel sistema del ristorante</h1>
+    <p><a href="Cameriere.html" class="pulsante">Entra come cameriere</a></p>
+    <p><a href="Manager.html" class="pulsante">Entra come manager</a></p>
+    <p><a href="StampanteBar.html" class="pulsante">Visualizza stampante bar</a></p>
+    <p><a href="StampanteCucina.html" class="pulsante">Visualizza stampante cucina</a></p>
+</body>
+</html>
