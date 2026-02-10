@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Menù</title>
+  <link rel="stylesheet" href="Decorazioni.css">
+</head>
+<body>
+    <h1>Menù</h1>
+
+    <li class="pulsante" onclick="ordina('PIZZAM','cucina',6)">
+      Pizza Margherita - €6
+    </li>
+
+    <li class="pulsante" onclick="ordina('PIZZAD','cucina',7)">
+      Pizza Diavola - €7
+    </li>
+
+    <li class="pulsante" onclick="ordina('PASTAC','cucina',8)">
+      Pasta Carbonara - €8
+    </li>
+
+    <li class="pulsante" onclick="ordina('ACQ','bar',2)">
+      Acqua - €2
+    </li>
+
+    <li class="pulsante" onclick="ordina('COCA','bar',3)">
+      Coca Cola - €3
+    </li>
+
+    <br>
+
+    <a href="Cameriere.html" class="pulsante">Torna al cameriere</a>
+    
+    <script>
+      function ordina(codice, destinazione, prezzo) {
+        let ordini = parseInt(localStorage.getItem("ordini"));
+        let incasso = parseInt(localStorage.getItem("incasso"));
+        localStorage.setItem("Ordini", ordini + 1);
+        localStorage.setItem("Incasso", incasso + prezzo);
+        let messaggio = codice + " ";
+        let vecchio = localStorage.getItem(destinazione);
+        localStorage.setItem(destinazione, vecchio + messaggio);
+        alert("Ordine inviato a " + destinazione);
+      }
+      
+  </script>
+</body>
+</html>
